@@ -72,8 +72,7 @@ class Sql:
         cursor.execute('select * from studentdata ')
         dataframe = cursor.fetchall()
         for data in dataframe:
-            df = (list(data))
-            print(pd.DataFrame(df))
+            print(data)
 
 
 def menu1():
