@@ -27,8 +27,8 @@ cursor = connection.cursor()
     # else:
     #     grade='E'
     # print(id,name,mark1,mark2,mark3,total,avg,grade)
-def insertstudent(id,name,mark1,mark2,mark3,total,avg,grade):
-    query = f"INSERT INTO student_python VALUES ({id}, '{name}', {mark1}, {mark2}, {mark3}, {total}, {avg}, '{grade}')"
+def insertstudent(id,name,mark1,mark2,mark3,total,avg,grade,location,course):
+    query = f"INSERT INTO student_python VALUES ({id}, '{name}', {mark1}, {mark2}, {mark3}, {total}, {avg}, '{grade}','{location}','{course}')"
     cursor.execute(query)
     connection.commit()
     # cursor.close()
